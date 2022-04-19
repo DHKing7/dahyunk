@@ -7,7 +7,9 @@ f = np.fromfile(fid, dtype=np.uint8, count=rows * cols)
 img = f.reshape((rows, cols))
 imgList = img.tolist()
 
-############## 2^7 슬라이싱 ###################
+############## 2^7 슬라이싱 ################### github Bit Slicing .raw 
+# 0-255 binary -> 00000000~11111111 
+# 2^7 -> '1'0100010
 img7 = []
 for k in imgList:
     line = []
